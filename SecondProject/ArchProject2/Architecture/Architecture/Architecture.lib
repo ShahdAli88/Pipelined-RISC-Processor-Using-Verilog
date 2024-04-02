@@ -1,0 +1,111 @@
+timestamp=1706714307059
+
+[~A]
+C:/Users/ASUS/Desktop/Arch/SecondProject/ArchProject2/Architecture/src/afterAlu.v=0*11383*12320
+C:/Users/ASUS/Desktop/Arch/SecondProject/ArchProject2/Architecture/src/allSystem.v=0*14008*18051
+C:/Users/ASUS/Desktop/Arch/SecondProject/ArchProject2/Architecture/src/aluInstructions.v=0*8751*10192
+C:/Users/ASUS/Desktop/Arch/SecondProject/ArchProject2/Architecture/src/instructionExcute.v=0*6340*7414
+C:/Users/ASUS/Desktop/Arch/SecondProject/ArchProject2/Architecture/src/instructionFetch.v=0*4091*5213
+C:/Users/ASUS/Desktop/Arch/SecondProject/ArchProject2/Architecture/src/mux2x1.v=0*552*1199
+C:/Users/ASUS/Desktop/Arch/SecondProject/ArchProject2/Architecture/src/stackUnit.v=0*2343*3009
+CUSP_Counter=1
+LastVerilogToplevel=allSystem_tb
+ModifyID=7
+Version=74
+
+[~MFT]
+0=6|0Architecture.mgf|18051|0
+1=5|1Architecture.mgf|30092|4589
+3=10|3Architecture.mgf|36590|3519
+
+[$root]
+A/$root=22|||1*19402
+BinW64/$root=3*20825
+SLP=3*20940
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c92161c9a60ca6a8c3a1f5a560580bdb676c9
+
+[UnitScopePackage_1]
+A/UnitScopePackage_1=22|../src/allSystem.v|0|1*30092
+BinW64/UnitScopePackage_1=3*36462
+CUSP=2
+R=../src/allSystem.v|0
+SLP=3*36590
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53e4dc7b1d77717ad53c996fab9a47702ebe12320c6f5abb5c120fb9f092d7a826f
+
+[afterAlu]
+A/afterAlu=22|../src/afterAlu.v|1|1*16530
+BinW64/afterAlu=3*18455
+R=../src/afterAlu.v|1
+SLP=3*19928
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|6a8f187a33c1ab085d6a1a4fba27b30bc3961cf173f4284945f58d09d41d93c8358fb8f820f5850cfdd3db5aeda8428f
+
+[allSystem]
+A/allSystem=22|../src/allSystem.v|7|1*19840
+BinW64/allSystem=3*21008
+CUSP=UnitScopePackage_1
+R=../src/allSystem.v|7
+SLP=3*27437
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|a427a461fc984424db32074dce029be5d3653051ad52a43dcf83c4813aa3d7d0a1a772b971355e740cb4f5ac03c8fbde
+
+[allSystem_tb]
+A/allSystem_tb=22|../src/allSystem.v|615|1*26100
+BinW64/allSystem_tb=3*33840
+CUSP=UnitScopePackage_1
+R=../src/allSystem.v|615
+SLP=3*35735
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|adda17bbe4f69f3b5f7350d7f768a56919521c5522c5c8ebdffbdcab9e79d6d5c35d3593174445fa31b91a8fb0943ff5
+
+[aluInstructions]
+A/aluInstructions=22|../src/aluInstructions.v|1|1*11946
+BinW64/aluInstructions=3*12811
+R=../src/aluInstructions.v|1
+SLP=3*14503
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|bc2a22d41db7ee18a85e5087c6989e11df863dc0f00bd2228b2bc83488173014a065f80765759ab103f971cd277e9e9f
+
+[aluInstructions_tb]
+A/aluInstructions_tb=22|../src/aluInstructions.v|94|1*14348
+BinW64/aluInstructions_tb=3*15782
+R=../src/aluInstructions.v|94
+SLP=3*16971
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|bc2a22d41db7ee18a85e5087c6989e11e03e70ba5853996028d23d6df2d67744634d718b7081a549331399b315018d71
+
+[instructionExcute]
+A/instructionExcute=22|../src/instructionExcute.v|1|1*8031
+BinW64/instructionExcute=3*9474
+R=../src/instructionExcute.v|1
+SLP=3*11419
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|6efe9d60e289308b5ea525fc7a2367b4545db0b1470f2910c1129a2e2677a8c5de9d817eb2618209b2a88f392df0339c
+
+[instructionFetch]
+A/instructionFetch=22|../src/instructionFetch.v|1|1*5584
+BinW64/instructionFetch=3*5391
+R=../src/instructionFetch.v|1
+SLP=3*7159
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|1be76f70f97f1fadfdef09e830f04e0c0381fdb1955da3be92124d2dcfef2742fa59483fddb2485957a6d28587319b55
+
+[mux2x1]
+A/mux2x1=22|../src/stackUnit.v|1|1*2965
+BinW64/mux2x1=3*2787
+R=../src/stackUnit.v|1
+SLP=3*3256
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|269c48f88c4a6630b0dac62e83881d970193382a7bcb42e55037c1f1e69397ee
+
+[mux_test]
+A/mux_test=22|../src/stackUnit.v|18|1*3883
+BinW64/mux_test=3*3496
+R=../src/stackUnit.v|18
+SLP=3*4556
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|6a75b0ea52c6624d57a1baa4afc1e1aff7fc1d8cd44619330756ae19f7972b09825e353a759e1f96c74fb1c4266b3983
+
+[~U]
+$root=12|0*12914|
+UnitScopePackage_1=12|0*13786||0x40200000
+afterAlu=12|0*11055||0x10
+allSystem=12|0*13176|
+allSystem_tb=12|0*13587||0x10
+aluInstructions=12|0*8279|
+aluInstructions_tb=12|0*8565||0x10
+instructionExcute=12|0*6045||0x10
+instructionFetch=12|0*3802||0x10
+mux2x1=12|0*1973|
+mux_test=12|0*2178||0x10

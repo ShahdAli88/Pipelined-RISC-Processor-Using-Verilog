@@ -1,0 +1,9 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Built-in symbols=0
+Arch=0
+[General]
+CurrentVersion=103
+[CACHEDOC|Aldec.Project.Generic.7|.\Arch\Arch.adf|]
+Path=
+[Gui config]
+RunFor=100 ns

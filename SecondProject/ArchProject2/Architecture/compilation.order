@@ -1,0 +1,7 @@
+.\src\mux2x1.v
+.\src\stackUnit.v
+.\src\instructionFetch.v
+.\src\instructionExcute.v
+.\src\aluInstructions.v
+.\src\afterAlu.v
+.\src\allSystem.v

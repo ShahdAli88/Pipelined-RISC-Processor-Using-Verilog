@@ -1,0 +1,74 @@
+# Design: Design Architecture already active.
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Not Defined
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Not Defined
+alog -O2 -sve -msg 5 -sv2k12 -work Architecture $dsn/src/mux2x1.v $dsn/src/stackUnit.v $dsn/src/instructionFetch.v $dsn/src/instructionExcute.v $dsn/src/aluInstructions.v $dsn/src/afterAlu.v $dsn/src/allSystem.v
+# Pass 1. Scanning modules hierarchy.
+# Error: VCP2505 stackUnit.v : (1, 15): Duplicate identifier: mux2x1.
+# Error: VCP2562 stackUnit.v : (2, 1): Redeclaration of port a.
+# Error: VCP2562 stackUnit.v : (2, 1): Redeclaration of port b.
+# Error: VCP2562 stackUnit.v : (2, 1): Redeclaration of port select.
+# Error: VCP2562 stackUnit.v : (3, 1): Redeclaration of port y.
+# Error: VCP2505 stackUnit.v : (4, 8): Duplicate identifier: y.
+# Error: VCP7801 stackUnit.v : (18, 16): Duplicated declaration of unit mux_test.
+# Info: VCP7802 mux2x1.v : (18, 16): mux_test was already declared. See previous declaration.
+# Error: VCP2505 stackUnit.v : (19, 16): Duplicate identifier: a.
+# Error: VCP2505 stackUnit.v : (19, 16): Duplicate identifier: b.
+# Error: VCP2505 stackUnit.v : (19, 16): Duplicate identifier: select.
+# Error: VCP2505 stackUnit.v : (20, 9): Duplicate identifier: y.
+# Error: VCP2505 stackUnit.v : (21, 31): Duplicate identifier: mux_test.
+# Compile failure 12 Errors 0 Warnings  Analysis time: 10[s].
+alog -O2 -sve -msg 5 -sv2k12 -work Architecture $dsn/src/mux2x1.v
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Unit top modules: mux_test.
+# $root top modules: mux_test.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work Architecture $dsn/src/stackUnit.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: mux_test.
+# $root top modules: mux_test.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work Architecture $dsn/src/instructionFetch.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: instructionFetch.
+# $root top modules: mux_test instructionFetch.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work Architecture $dsn/src/instructionExcute.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module mux2x1 found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 instructionExcute.v : (43, 39): Implicit net declaration, symbol ALUSrc0 has not been declared in module instructionExcute.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: instructionExcute.
+# $root top modules: mux_test instructionFetch instructionExcute.
+# Compile success 0 Errors 0 Warnings  Analysis time: 3[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug wi
